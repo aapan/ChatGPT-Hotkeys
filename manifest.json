@@ -1,0 +1,51 @@
+{
+    "manifest_version": 2,
+    "name": "ChatGPT Hotkeys",
+    "version": "1.0",
+    "description": "'ChatGPT Hotkeys' is a convenient Chrome extension that allows you to interact with the ChatGPT page using customizable hotkeys.",
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "commands": {
+        "open_chatgpt": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+K",
+                "mac": "Command+Shift+K"
+            },
+            "description": "Open ChatGPT page"
+        },
+        "focus_on_prompt_textarea": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+P",
+                "mac": "Command+Shift+P"
+            },
+            "description": "Focus on prompt textarea"
+        },
+        "blur_on_prompt_textarea": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+E",
+                "mac": "Command+Shift+E"
+            },
+            "description": "Blur on prompt textarea"
+        },
+        "open_new_chat": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+O",
+                "mac": "Command+Shift+O"
+            },
+            "description": "Open new chat"
+        }
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
